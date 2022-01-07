@@ -165,13 +165,14 @@ a:hover {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    box-shadow: 0px 10px 8px #1F2024;
 }
 .homepage-clone-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-
+    box-shadow: 0px 8px 8px #1F2024;
     transform: rotateY(180deg);
 }
 #netflix-logo{
@@ -186,3 +187,24 @@ a {
 a:hover {
     color: #F6F6F7;
 }
+#homepage-back-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 0, 0, 0.363);
+    border-radius: 4px;
+}
+#homepage-back-info h2{
+    font-size: 2em;
+    padding: .3em 0;
+}
+
+#homepage-back-info p{
+    margin: 0 4px;
+    text-align: justify;
+}
+

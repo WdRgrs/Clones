@@ -11,7 +11,7 @@ function Home() {
     return (
         <div className='homepage'>
             <div className='homepage-title'>
-                Wade's Wild and Wonderful Clones
+                <h1>Wade's Wild and Wonderful Clones</h1>
             </div>
 
             <IconContext.Provider value={{size: '1.5em'}}>
@@ -22,12 +22,18 @@ function Home() {
                                 <img src={netflixLogo} id="netflix-logo"></img>
                             </div>
 
-                            <div className='homepage-clone-card-back'>
-                                <Link to='netflix'>Netflix</Link>
-                                <SiNetflix 
-                                    color='red'
-                                />
-                            </div>
+                                <div className='homepage-clone-card-back'>
+                                    <Link to='netflix'>
+                                        <div id='homepage-back-info'>
+                                            <SiNetflix 
+                                                color='red'
+                                                size='7em'
+                                            />
+                                            <h2>Netflix</h2>
+                                            <p>A clone of netflix that drops the user in at the account selection screen - click 'You' to navigate farther into the page.</p>
+                                        </div>
+                                    </Link>
+                                </div>
                         </div>
                     </div>
 
@@ -38,8 +44,14 @@ function Home() {
                             </div>
 
                             <div className='homepage-clone-card-back'>
-                                <Link to='google'>Google</Link>
-                                <FcGoogle />
+                                <Link to='google'>
+                                    <div id='homepage-back-info'>
+                                        <FcGoogle 
+                                            size='7em'
+                                        />
+                                        <h2>Google</h2>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
