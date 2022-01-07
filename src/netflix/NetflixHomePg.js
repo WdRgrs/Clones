@@ -1,10 +1,12 @@
 import React from 'react'
+import NetflixNav from './NetflixNav'
 
 function NetflixBrowse() {
     return (
-        <div>
+        <main id='netflix-main-container'>
+            <NetflixNav />
             Netflix Browsing Page!
-        </div>
+        </main>
     )
 }
 

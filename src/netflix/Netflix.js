@@ -2,28 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './netflix.css'
 import { FaPlusCircle } from "react-icons/fa";
-import netflixlogo from './netflix-logo.png'
 import profile1 from './profile1.png'
 import profile2 from './profile2.png'
 import profile3 from './profile3.png'
-
+import NetflixNav from './NetflixNav';
 
 function Netflix() {
     const badPathClick = () => {
         alert("Sorry friend, this is just a mock website. To progress to the next stage click on the 'You' profile, or click 'Wade' to return to my portfolio page.  Thanks!")
     }
 
-
-
     return (
         <div className='netflix-landing'>
-            <div className='netflix-landing-nav'>
-                <a href='http://www.netflix.com' target='_blank' rel='noreferrer'>
-                    <img src={netflixlogo} id='netflix-landing-logo' alt='no'></img>
-                </a>
-            </div>
-
-
+            <NetflixNav />
 
             <div className='netflix-landing-container'>
                 <h1 className='netflix-landing-header'>

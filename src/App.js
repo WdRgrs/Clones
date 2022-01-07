@@ -4,7 +4,7 @@ import Google from './google/Google'
 import Home from './Home'
 import Midwestern from './midwestern/Midwestern'
 import Netflix from './netflix/Netflix'
-import NetflixBrowse from './netflix/NetflixBrowse'
+import NetflixBrowse from './netflix/NetflixHomePg'
 
 function App() {
   return (
