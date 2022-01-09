@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './netflix.css'
 import { FaPlusCircle } from "react-icons/fa";
@@ -8,13 +8,20 @@ import profile3 from './profile3.png'
 import NetflixNav from './NetflixNav';
 
 function Netflix() {
+    const [loggedIn, setLoggedIn] = useState(false)
+
+
+
     const badPathClick = () => {
         alert("Sorry friend, this is just a mock website. To progress to the next stage click on the 'You' profile, or click 'Wade' to return to my portfolio page.  Thanks!")
     }
 
     return (
         <div className='netflix-landing'>
-            <NetflixNav />
+            <NetflixNav 
+                loggedIn={loggedIn}
+                setLoggedIn={setLoggedIn}
+            />
 
             <div className='netflix-landing-container'>
                 <h1 className='netflix-landing-header'>
@@ -23,7 +30,7 @@ function Netflix() {
 
                 <div className='netflix-profile-container'>
                     <Link to='/netflix/browse'>
-                        <div className='netflix-profile-card'>
+                        <div className='netflix-profile-card' onClick={() => setLoggedIn(true)}>
                             <img src={profile1} className='netflix-profile-img' alt='first profile'></img>
                             <p>You</p>
                         </div>

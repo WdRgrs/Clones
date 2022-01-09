@@ -19,7 +19,7 @@ function Home() {
                     <div className='homepage-clone-holder'>
                         <div className='homepage-clone-card'>
                             <div className='homepage-clone-card-front'>
-                                <img src={netflixLogo} id="netflix-logo"></img>
+                                <img src={netflixLogo} id="netflix-logo" alt=''></img>
                             </div>
 
                                 <div className='homepage-clone-card-back'>
@@ -40,7 +40,7 @@ function Home() {
                     <div className='homepage-clone-holder'>
                         <div className='homepage-clone-card'>
                             <div className='homepage-clone-card-front'>
-                                <img src={googleLogo} id="google-logo"></img>
+                                <img src={googleLogo} id="google-logo" alt=''></img>
                             </div>
 
                             <div className='homepage-clone-card-back'>
