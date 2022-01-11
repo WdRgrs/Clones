@@ -4,7 +4,7 @@ import './home.css'
 import { IconContext } from 'react-icons';
 import { FcGoogle } from 'react-icons/fc'
 import { SiNetflix } from "react-icons/si";
-import netflixLogo from './netflix/netflix-logo.png'
+import netflixLogo from './netflix/images/netflix-logo.png'
 import googleLogo from './google/google-logo.png'
 
 function Home() {

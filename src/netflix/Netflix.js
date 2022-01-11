@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './netflix.css'
 import { FaPlusCircle } from "react-icons/fa";
-import profile1 from './profile1.png'
-import profile2 from './profile2.png'
-import profile3 from './profile3.png'
+import profile1 from './images/profile1.png'
+import profile2 from './images/profile2.png'
+import profile3 from './images/profile3.png'
 import NetflixNav from './NetflixNav';
 
 function Netflix() {

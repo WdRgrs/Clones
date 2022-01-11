@@ -4,7 +4,7 @@ import Google from './google/Google'
 import Home from './Home'
 import Midwestern from './midwestern/Midwestern'
 import Netflix from './netflix/Netflix'
-import NetflixBrowse from './netflix/NetflixHomePg'
+import NetflixHomePg from './netflix/NetflixHomePg'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           </Route>
 
           <Route path='/netflix/browse' exact>
-            <NetflixBrowse />
+            <NetflixHomePg />
           </Route>
 
           <Route path='/google' exact>

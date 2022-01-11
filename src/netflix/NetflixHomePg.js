@@ -1,7 +1,7 @@
 import React from 'react'
 import NetflixNav from './NetflixNav'
 
-function NetflixBrowse({loggedIn, setLoggedIn}) {
+function NetflixHomePg({loggedIn, setLoggedIn}) {
     return (
         <main id='netflix-main-container'>
             <NetflixNav 
@@ -14,4 +14,4 @@ function NetflixBrowse({loggedIn, setLoggedIn}) {
     )
 }
 
-export default NetflixBrowse
+export default NetflixHomePg

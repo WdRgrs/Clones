@@ -1,5 +1,5 @@
 import React from 'react'
-import netflixlogo from './netflix-logo.png'
+import netflixlogo from './images/netflix-logo.png'
 
 function NetflixNav({ loggedIn, setLoggedIn}) {
 
@@ -20,7 +20,7 @@ function NetflixNav({ loggedIn, setLoggedIn}) {
             <a href='http://www.netflix.com' target='_blank' rel='noreferrer'>
                 <img src={netflixlogo} id='netflix-landing-logo' alt='no'></img>
             </a>
-            {(loggedIn) ? handleLoggedIn() : null }
+            {/* {(!loggedIn) ? null : handleLoggedIn()} */}
         </div>
     )
 }
