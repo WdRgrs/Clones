@@ -2,6 +2,8 @@ import React from 'react'
 import NetflixNav from './NetflixNav'
 
 function NetflixHomePg() {
+    // interpolation for random videos on refresh
+
     return (
         <main id='netflix-main-container'>
             <NetflixNav 
