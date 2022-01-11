@@ -7,9 +7,9 @@ import profile2 from './images/profile2.png'
 import profile3 from './images/profile3.png'
 import NetflixNav from './NetflixNav';
 
-function Netflix() {
-    const [loggedIn, setLoggedIn] = useState(false)
-
+function Netflix({loggedIn, setLoggedIn}) {
+    // const [loggedIn, setLoggedIn] = useState(false)
+    
 
 
     const badPathClick = () => {
