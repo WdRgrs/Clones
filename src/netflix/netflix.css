@@ -136,6 +136,7 @@
     z-index: 10;
 }
 #netflix-nav-left {
+    color: white;
 }
 .netflix-nav-left-icons {
     width: fit-content;
@@ -146,7 +147,7 @@
     /* border: 2px solid red; */
 }
 #netflix-nav-right {
-    /* justify-content: flex-end; */
+    color: white;
 }
 .netflix-nav-right-icons{
     width: fit-content;
