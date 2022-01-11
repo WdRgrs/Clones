@@ -13,32 +13,32 @@ function NetflixNav() {
 
     function handleLoggedIn() {
         return (
-            <nav>
+            <nav className='netflix-home-nav'>
                 <div className='netflix-nav-icons' id='netflix-nav-left'>
-                    <div>Home</div>
-                    <div>TV Shows</div>
-                    <div>Movies</div>
-                    <div>New & Popular</div>
-                    <div>My List</div>
-                    <div>Audio & Subtitles</div>
+                    <div className='netflix-nav-left-icons' id='home'>Home</div>
+                    <div className='netflix-nav-left-icons'>TV Shows</div>
+                    <div className='netflix-nav-left-icons'>Movies</div>
+                    <div className='netflix-nav-left-icons'>New & Popular</div>
+                    <div className='netflix-nav-left-icons'>My List</div>
+                    <div className='netflix-nav-left-icons'>Audio & Subtitles</div>
                 </div>
                 <div className='netflix-nav-icons' id='netflix-nav-right'>
-                    <div>Search</div>
-                    <div>Kids</div>
-                    <div>DVD</div>
-                    <div>Bell</div>
-                    <div>Dropdown Menu</div>
+                    <div className='netflix-nav-right-icons'>Search</div>
+                    <div className='netflix-nav-right-icons'>Kids</div>
+                    <div className='netflix-nav-right-icons'>DVD</div>
+                    <div className='netflix-nav-right-icons'>Bell</div>
+                    <div className='netflix-nav-right-icons'>Dropdown Menu</div>
                 </div>
             </nav>
         )
     }
     return (
-        <div className='netflix-landing-nav'>
+        <header className='netflix-landing-nav'>
             <a href='http://www.netflix.com' target='_blank' rel='noreferrer'>
                 <img src={netflixlogo} id='netflix-landing-logo' alt='no'></img>
             </a>
             {(loggedIn()) ? handleLoggedIn() : null}
-        </div>
+        </header>
     )
 }
 
