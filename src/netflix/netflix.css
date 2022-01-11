@@ -4,18 +4,22 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #141414
+    background-color: #141414;
+    z-index: 1;
 }
 .netflix-landing:hover {
     cursor: default;
 }
 .netflix-landing-nav {
+    position: fixed;
+    z-index: 5;
     display: flex;
     width: 100%;
     background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
     /* border: 2px solid red; */
 }
 #netflix-landing-logo {
+    z-index: 15;
     margin-left: calc(1.2vh + 2vw);
     width: 7.25rem;
 }
@@ -30,6 +34,7 @@
     padding: 20px 0 0 0;
 }
 .netflix-landing-header {
+    z-index: 15;
     position: relative;
     top: 8px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -106,8 +111,10 @@
 #netflix-main-container{
     width: 100vw;
     height: 100vh;
-    background-color: #151415;
-    color: white;
+    /* background-color: #151415; */
+    background: transparent;
+    z-index: 1;
+    /* color: white; */
 }
 
 .netflix-home-nav {
@@ -117,6 +124,7 @@
     align-items: center;
     /* margin: 0 25px; */
     margin: 0 1.3vw;
+    z-index: 4;
     /* border: 2px solid red; */
 }
 .netflix-nav-icons {
@@ -125,6 +133,7 @@
     font-size: calc(.7vh + .4vw);
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 500;
+    z-index: 10;
 }
 #netflix-nav-left {
 }
@@ -133,7 +142,7 @@
     cursor: pointer;
     margin: 5px 10px;
     transition: color .4s;
-
+    
     /* border: 2px solid red; */
 }
 #netflix-nav-right {
@@ -144,7 +153,7 @@
     cursor: pointer;
     margin: 5px 10px;
     transition: color .4s;
-
+    
     /* border: 2px solid red; */
 }
 .netflix-nav-left-icons:hover{
@@ -172,3 +181,24 @@
 /* Start of Netflix Home Page */
 /*  */
 /*  */
+#video {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #151415;    
+    z-index: -10;
+}
+#next {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+#boxes {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 0 50px;
+}
