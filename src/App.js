@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Google from './google/Google'
 import Home from './Home'
@@ -7,8 +7,6 @@ import Netflix from './netflix/Netflix'
 import NetflixHomePg from './netflix/NetflixHomePg'
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false)
-
   return (
     <div>
       <Router>
@@ -18,17 +16,11 @@ function App() {
           </Route>
 
           <Route path='/netflix' exact>
-            <Netflix 
-              loggedIn={loggedIn}
-              setLoggedIn={setLoggedIn}
-            />
+            <Netflix/>
           </Route>
 
           <Route path='/netflix/browse' exact>
-            <NetflixHomePg 
-              loggedIn={loggedIn}
-              setLoggedIn={setLoggedIn}
-            />
+            <NetflixHomePg/>
           </Route>
 
           <Route path='/google' exact>

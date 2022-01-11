@@ -1,15 +1,11 @@
 import React from 'react'
 import NetflixNav from './NetflixNav'
 
-function NetflixHomePg({loggedIn, setLoggedIn}) {
+function NetflixHomePg() {
     return (
         <main id='netflix-main-container'>
-            <NetflixNav 
-                loggedIn={loggedIn}
-                setLoggedIn={setLoggedIn}
-            />
+            <NetflixNav />
             Netflix Browsing Page!
-            <button onClick={()=>console.log(loggedIn)}>TTT</button>
         </main>
     )
 }

@@ -1,7 +1,15 @@
 import React from 'react'
 import netflixlogo from './images/netflix-logo.png'
 
-function NetflixNav({ loggedIn, setLoggedIn}) {
+function NetflixNav() {
+
+    function loggedIn() {
+        const { pathname } = window.location;
+        if (pathname.includes('browse')) {
+            return true;
+        }
+        return false;
+    }
 
     function handleLoggedIn() {
         return (
@@ -29,7 +37,7 @@ function NetflixNav({ loggedIn, setLoggedIn}) {
             <a href='http://www.netflix.com' target='_blank' rel='noreferrer'>
                 <img src={netflixlogo} id='netflix-landing-logo' alt='no'></img>
             </a>
-            {(loggedIn) ? handleLoggedIn() : null}
+            {(loggedIn()) ? handleLoggedIn() : null}
         </div>
     )
 }
