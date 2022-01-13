@@ -59,7 +59,6 @@ function Netflix() {
             >
                 Manage Profiles
             </div>
-
         </div>
     )
 }
