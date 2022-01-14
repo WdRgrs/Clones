@@ -14,9 +14,7 @@ function NetflixHomePg() {
             />
 
             <div id='next'>Blocker div</div>
-            <div id='next'>
-                <div id='boxes'>Boxes</div>
-            </div>
+
         </main>
     )
 }
