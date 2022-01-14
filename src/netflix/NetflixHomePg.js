@@ -1,10 +1,12 @@
 import React from 'react'
+import './netflix.css'
+import NetflixBox from './NetflixBox'
 import NetflixNav from './NetflixNav'
-import './netflix.module.css'
 
 
 function NetflixHomePg() {
     // interpolation for random videos on refresh
+    const newArr = ['a', 'b','c']
 
     return (
         <main id='netflix-main-container'>
@@ -16,6 +18,10 @@ function NetflixHomePg() {
             />
 
             <div id='next'>Blocker div</div>
+
+            <div>
+                {newArr.map(e => <NetflixBox />)}
+            </div>
 
         </main>
     )

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
-import './netflix/netflix.module.css'
 import { IconContext } from 'react-icons';
 import { FcGoogle } from 'react-icons/fc'
 import { SiNetflix } from "react-icons/si";

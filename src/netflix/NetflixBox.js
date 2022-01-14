@@ -1,5 +1,5 @@
 import React from 'react'
-import './netflix.module.css'
+import './netflix.css'
 
 
 function NetflixBox() {
