@@ -1,4 +1,6 @@
 import React from 'react'
+import './netflix.module.css'
+
 
 function NetflixBox() {
     return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import './netflix/netflix.module.css'
 import Google from './google/Google'
 import Home from './Home'
 import Midwestern from './midwestern/Midwestern'

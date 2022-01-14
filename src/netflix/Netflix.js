@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './netflix.css'
+import './netflix.module.css'
 import { FaPlusCircle } from "react-icons/fa";
 import profile1 from './images/profile1.png'
 import profile2 from './images/profile2.png'

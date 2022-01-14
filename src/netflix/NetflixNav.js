@@ -1,4 +1,5 @@
 import React from 'react'
+import './netflix.module.css'
 import netflixlogo from './images/netflix-logo.png'
 
 function NetflixNav() {
