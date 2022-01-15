@@ -192,10 +192,16 @@
     background-color: #151415;    
     z-index: -10;
 }
+#blocker{
+    width: 100vw;
+    height: 90vh;
+}
 #next {
     display: flex;
-    height: 90vh;
+    height: 10vh;
     width: 100vw;
+    border: 2px solid green;
+
 }
 #boxes {
     background-color: red;

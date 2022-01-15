@@ -17,9 +17,11 @@ function NetflixHomePg() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             />
 
-            <div id='next'>Blocker div</div>
-
+            <div id='blocker'>Blocker div</div>
+{/* breakoff next into new component */}
+            <div id='next'> 
                 {newArr.map(e => <NetflixBox />)}
+            </div>
 
 
         </main>
