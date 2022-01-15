@@ -19,9 +19,8 @@ function NetflixHomePg() {
 
             <div id='next'>Blocker div</div>
 
-            <div>
                 {newArr.map(e => <NetflixBox />)}
-            </div>
+
 
         </main>
     )
