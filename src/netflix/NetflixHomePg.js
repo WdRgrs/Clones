@@ -19,7 +19,7 @@ function NetflixHomePg() {
 
             <div id='blocker'>Blocker div</div>
 {/* breakoff next into new component */}
-            <div id='next'> 
+            <div id=''> 
                 {newArr.map(e => <NetflixBox />)}
             </div>
 
