@@ -8,6 +8,8 @@ import OnNetflixCat from './OnNetflixCat'
 function NetflixHomePg() {
     // interpolation for random videos on refresh
     // const newArr = ['a', 'b','c']
+    let netflixCategories = ['Only on Netflix', 'Trending Now', 'New This Week', 'Award-Winning Bingeworthy TV Shows']
+
 
     return (
         <main id='netflix-main-container'>
@@ -19,11 +21,14 @@ function NetflixHomePg() {
             />
 
             <div id='blocker'>Blocker div</div>
-{/* breakoff next into new component */}
-            <div id='on-netflix-container'> 
-                <OnNetflixCat />
-            </div>
 
+{/* Map over categories array - reuse component */}
+            {netflixCategories.map(x => 
+                    <OnNetflixCat 
+                        netflixCategories={x}
+                    />
+                )
+            }
 
         </main>
     )

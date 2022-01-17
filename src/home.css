@@ -35,8 +35,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
+    overflow-x: hidden;
+    z-index: -1231;
     line-height: 1;
+    background-color: #141414;
 }
 ul {
     list-style: none;

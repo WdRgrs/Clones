@@ -6,6 +6,11 @@ function NetflixBox() {
     return (
         <div id=''>
             <div id='boxes'>Boxes</div>
+            <div id='boxes'>Boxes</div>
+            <div id='boxes'>Boxes</div>
+            <div id='boxes'>Boxes</div>
+            <div id='boxes'>Boxes</div>
+            <div id='boxes'>Boxes</div>
         </div>
     )
 }
