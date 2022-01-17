@@ -1,13 +1,13 @@
 import React from 'react'
 import './netflix.css'
-import NetflixBox from './NetflixBox'
+// import NetflixBox from './NetflixBox'
 import NetflixNav from './NetflixNav'
 import OnNetflixCat from './OnNetflixCat'
 
 
 function NetflixHomePg() {
     // interpolation for random videos on refresh
-    const newArr = ['a', 'b','c']
+    // const newArr = ['a', 'b','c']
 
     return (
         <main id='netflix-main-container'>
