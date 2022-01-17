@@ -4,7 +4,7 @@ import './netflix.css'
 
 function NetflixBox() {
     return (
-        <div id='on-netflix-container'>
+        <div id=''>
             <div id='boxes'>Boxes</div>
         </div>
     )

@@ -201,7 +201,6 @@
 /*  */
 /*  */
 #on-netflix-container{
-    border: 2px solid red;
     display: flex;
     height: 10vh;
     width: 100vw;
@@ -209,6 +208,7 @@
 }
 #on-netflix{
     color: white;
+    /* border: 2px solid red; */
 }
 #next {
 

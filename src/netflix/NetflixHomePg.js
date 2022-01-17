@@ -2,6 +2,7 @@ import React from 'react'
 import './netflix.css'
 import NetflixBox from './NetflixBox'
 import NetflixNav from './NetflixNav'
+import OnNetflixCat from './OnNetflixCat'
 
 
 function NetflixHomePg() {
@@ -19,8 +20,8 @@ function NetflixHomePg() {
 
             <div id='blocker'>Blocker div</div>
 {/* breakoff next into new component */}
-            <div id=''> 
-                {newArr.map(e => <NetflixBox />)}
+            <div id='on-netflix-container'> 
+                <OnNetflixCat />
             </div>
 
 
