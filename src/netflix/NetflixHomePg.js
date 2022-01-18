@@ -7,7 +7,6 @@ import OnNetflixCat from './OnNetflixCat'
 
 function NetflixHomePg() {
     // interpolation for random videos on refresh
-    // const newArr = ['a', 'b','c']
     let netflixCategories = ['Only on Netflix', 'Trending Now', 'New This Week', 'Award-Winning Bingeworthy TV Shows']
 
 
