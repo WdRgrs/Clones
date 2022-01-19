@@ -1,6 +1,8 @@
 import React from 'react'
 import './netflix.css'
 import netflixlogo from './images/netflix-logo.png'
+import { FaSearch, FaBell } from "react-icons/fa";
+
 
 function NetflixNav() {
 
@@ -24,10 +26,10 @@ function NetflixNav() {
                     <div className='netflix-nav-left-icons'>Audio & Subtitles</div>
                 </div>
                 <div className='netflix-nav-icons' id='netflix-nav-right'>
-                    <div className='netflix-nav-right-icons'>Search</div>
+                    <div className='netflix-nav-right-icons'><FaSearch /></div>
                     <div className='netflix-nav-right-icons'>Kids</div>
                     <div className='netflix-nav-right-icons'>DVD</div>
-                    <div className='netflix-nav-right-icons'>Bell</div>
+                    <div className='netflix-nav-right-icons'><FaBell /></div>
                     <div className='netflix-nav-right-icons'>Dropdown Menu</div>
                 </div>
             </nav>
