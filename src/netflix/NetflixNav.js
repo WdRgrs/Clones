@@ -30,8 +30,8 @@ function NetflixNav() {
                     <div className='netflix-nav-left-icons'>Audio & Subtitles</div>
                 </div>
                 <div className='netflix-nav-icons' id='netflix-nav-right'>
-                    <div className='netflix-nav-right-icons'>
-                        <FaSearch size={20}/>
+                    <div className='netflix-nav-right-icons' id='netflix-nav-search'>
+                        <FaSearch size={19}/>
                     </div>
                     <div className='netflix-nav-right-icons'>Kids</div>
                     <div className='netflix-nav-right-icons'>DVD</div>
