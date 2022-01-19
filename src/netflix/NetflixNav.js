@@ -40,7 +40,7 @@ function NetflixNav() {
                     </div>
                     <div className='netflix-nav-right-icons'>
                         <img src={profile2} alt='dropdown menu icon' id='dropdown-pic'/> 
-                        <IoMdArrowDropdown size={20.5}/>
+                        <IoMdArrowDropdown size={20}/>
                     </div>
                 </div>
             </nav>
