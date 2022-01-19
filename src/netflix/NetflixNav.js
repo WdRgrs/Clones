@@ -1,7 +1,11 @@
 import React from 'react'
 import './netflix.css'
 import netflixlogo from './images/netflix-logo.png'
-import { FaSearch, FaBell } from "react-icons/fa";
+import profile2 from './images/profile2.png'
+import { FaSearch } from "react-icons/fa";
+import { BsBellFill } from "react-icons/bs";
+
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 
 function NetflixNav() {
@@ -26,11 +30,18 @@ function NetflixNav() {
                     <div className='netflix-nav-left-icons'>Audio & Subtitles</div>
                 </div>
                 <div className='netflix-nav-icons' id='netflix-nav-right'>
-                    <div className='netflix-nav-right-icons'><FaSearch /></div>
+                    <div className='netflix-nav-right-icons'>
+                        <FaSearch size={20}/>
+                    </div>
                     <div className='netflix-nav-right-icons'>Kids</div>
                     <div className='netflix-nav-right-icons'>DVD</div>
-                    <div className='netflix-nav-right-icons'><FaBell /></div>
-                    <div className='netflix-nav-right-icons'>Dropdown Menu</div>
+                    <div className='netflix-nav-right-icons'>
+                        <BsBellFill size={24}/>
+                    </div>
+                    <div className='netflix-nav-right-icons'>
+                        <img src={profile2} alt='dropdown menu icon' id='dropdown-pic'/> 
+                        <IoMdArrowDropdown size={20.5}/>
+                    </div>
                 </div>
             </nav>
         )
