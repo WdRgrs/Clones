@@ -7,7 +7,6 @@ import { BsBellFill } from "react-icons/bs";
 
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
-
 function NetflixNav() {
 
     function loggedIn() {

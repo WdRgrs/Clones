@@ -9,7 +9,6 @@ function NetflixHomePg() {
     // interpolation for random videos on refresh
     let netflixCategories = ['Only on Netflix', 'Trending Now', 'New This Week', 'Award-Winning Bingeworthy TV Shows']
 
-
     return (
         <main id='netflix-main-container'>
             <NetflixNav 
