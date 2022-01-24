@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { BiVolumeFull, BiVolumeMute } from "react-icons/bi";
-import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
 import NetflixVideoCard from './NetflixVideoCard';
 
 

@@ -8,13 +8,33 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/* Colors Used */
+.colors{
+    /* Background Colors */
+    color: #FFFFFF4D;
+    color: #E50914;
+    color: #333333;
+    color: #323232;
+    color: #2d2d2d;
+    color: #232323;
+    color: #222222;
+    color: #1c1c1c;
+    color: #1a1a1a;
+    color: #141414;
+    color: #14141490;
+    
+    /* Text Colors */
+    color: #ffffff;
+    color: #e5e5e5;
+    color: #808080;
+    color: #E50914;
+}
 
 
 /*  */
 /*  */
 /*  */
-/* General Netfix Landing CSS */
+/* NETFLIX LANDING CSS */
 .netflix-landing {
     display: flex;
     flex-direction: column;
@@ -126,7 +146,6 @@
 
 
 
-
 /*  */
 /*  */
 /*  */
@@ -160,15 +179,44 @@
     height: 88vh;
     /* border: 2px solid red; */
 }
+
+
+/* NETFLIX MAIN TITLE CARD */
 #netflix-main-video-title{
     display: flex;
     flex-direction: column;
     
     position: absolute;
+    width: 20vw;
     top: 40vh;
     left: 5vw;
     color: white;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+#netflix-title-info {
+    gap: 1vw;
+}
+#netflix-rating {
+
+    padding: 1px 6px;
+    border: 1px solid #FFFFFF4D;
+}
+
+.iconify{
+    padding: 0 1px;
+    border: 1px solid #FFFFFF4D;
+}
+
+#netflix-title-about{
+    color: grey;
+    padding: .4vw 0;
+}
+.netflix-title-section:nth-child(even){
+    display: flex;
+    align-items: center;
+}
+.netflix-title-section:nth-child(odd) *{
+    display: flex;
 }
 #deadstock-title {
     font-family: 'Dead-Stock';
@@ -181,9 +229,11 @@
 }
 #netflix-title-info{
     display: flex;
-
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
+
+
+
 
 
 
@@ -338,3 +388,10 @@
     color: #e5e5e5;
     cursor: default;
 }
+
+
+
+
+
+
+
