@@ -215,6 +215,15 @@
 #blocker{
     width: 100vw;
     height: 88vh;
+    /* border: 2px solid red; */
+}
+#netflix-volume-button{
+    position: absolute;
+    right: 2vw;
+    bottom: 20vh;
+    /* width: fit-content; */
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 /*  */

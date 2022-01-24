@@ -13,8 +13,6 @@ function NetflixHomePg() {
         <main id='netflix-main-container'>
             <NetflixNav />
             <NetflixVideo />
-            <div id='blocker'>Blocker div</div>
-
 {/* Map over categories array - reuse component */}
             {netflixCategories.map(idx => 
                     <OnNetflixCat 
