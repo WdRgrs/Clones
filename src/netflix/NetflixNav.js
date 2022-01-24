@@ -4,7 +4,6 @@ import netflixlogo from './images/netflix-logo.png'
 import profile2 from './images/profile2.png'
 import { FaSearch } from "react-icons/fa";
 import { BsBellFill } from "react-icons/bs";
-
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 function NetflixNav() {

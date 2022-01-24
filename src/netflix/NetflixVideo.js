@@ -23,6 +23,7 @@ function NetflixVideo() {
             {/*blocker div - maybe change to kobra kai info */}
             <div id='blocker'>
                 <NetflixVideoCard />
+
                 <div onClick={()=> handleMute()}>
                 <div id='netflix-volume-button'>
                     <BiVolumeFull 

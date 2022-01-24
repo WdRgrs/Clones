@@ -8,7 +8,7 @@ function NetflixVideoCard() {
             <section id='netflix-title-info'>
                 <div>New</div>
                 <div>2020</div>
-                <div>TV-14</div>
+                <div id='netflix-rating'>TV-14</div>
                 <div>4 Seasons</div>
             </section>
             <p id='netflix-title-about'>a;lkjdf a;lkjsdf ;lkajsdf ;lkajd</p>
