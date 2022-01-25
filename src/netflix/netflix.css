@@ -164,12 +164,9 @@
     /* border: 2px solid red; */
 }
 
-#video {
+#video-background {
     position: absolute;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill;
+
     top: 0;
     left: 0;
     background-color: #151415;    
@@ -177,7 +174,7 @@
 }
 #blocker{
     width: 100vw;
-    height: 88vh;
+    height: 43.1vw;
     /* border: 2px solid red; */
 }
 
@@ -188,12 +185,36 @@
     flex-direction: column;
     
     position: absolute;
-    width: 20vw;
+    width: 25vw;
     top: 40vh;
     left: 5vw;
     color: white;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
+#deadstock-title {
+    font-family: 'Dead-Stock';
+    font-size: 4em;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #netflix-title-info {
     gap: 1vw;
 }
@@ -219,12 +240,7 @@
 .netflix-title-section:nth-child(odd) *{
     display: flex;
 }
-#deadstock-title {
-    font-family: 'Dead-Stock';
-    font-size: 3em;
-    text-transform: uppercase;
-    color: white;
-}
+
 #deadstock-title span {
     font-size: 1.4em;
 }

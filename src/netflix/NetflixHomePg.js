@@ -15,11 +15,10 @@ function NetflixHomePg() {
             <NetflixVideo />
 {/* Map over categories array - reuse component */}
             {netflixCategories.map(idx => 
-                    <OnNetflixCat 
-                        netflixCategories={idx}
-                    />
-                )
-            }
+                <OnNetflixCat 
+                    netflixCategories={idx}
+                />
+            )}
 
         </main>
     )

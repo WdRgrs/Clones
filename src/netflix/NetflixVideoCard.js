@@ -38,7 +38,7 @@ function NetflixVideoCard() {
                     style={{
                         border: '1px solid white',
                         borderRadius: '50%',
-                        padding: '.6em'
+                        padding: '.5em'
                     }}
                 />
 

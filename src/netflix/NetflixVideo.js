@@ -1,28 +1,34 @@
 import React, {useState} from 'react';
+import ReactPlayer from 'react-player'
 import { BiVolumeFull, BiVolumeMute } from "react-icons/bi";
 import NetflixVideoCard from './NetflixVideoCard';
+import NetflixVideoTitle from './NetflixVideoTitle';
 
 
 function NetflixVideo() {
-    const [vol, setVol] = useState(1);
+    const [vol, setVol] = useState(0);
+    
+    let videoUrl = 'https://vimeo.com/655516741'
 
     function handleMute() {
         vol ? setVol(0) : setVol(1)
     }
     return (
         <div>
-            {/* <iframe id='video' src="https://www.youtube.com/embed/5MC1dFvCmC8?autoplay=1&rel=1&controls=0&iv_load_policy=3&modestbranding=1&loop=1" title='cobra-kai-background'
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            /> */}
-            <iframe id='video' src={`https://player.vimeo.com/video/655516741?h=a72147ab90&autoplay=1&muted=${vol}&loop=0&title=0&byline=0&portrait=0`} title='cobra-kai-background'
-                // allow="autoplay; fullscreen; picture-in-picture" 
-                allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+            <ReactPlayer 
+                id='video-background'
+                url={videoUrl}
+                playing={true}
+                controls={false}
+                volume={vol}
+                width='100vw'
+                height='100vh'
             />
+
             {/*blocker div - maybe change to kobra kai info */}
             <div id='blocker'>
-                <NetflixVideoCard />
-
+                {/* <NetflixVideoCard /> */}
+                <NetflixVideoTitle />
                 <div onClick={()=> handleMute()}>
                 <div id='netflix-volume-button'>
                     <BiVolumeFull 
@@ -34,7 +40,7 @@ function NetflixVideo() {
                     <BiVolumeMute 
                         color='White'
                         size='2rem'
-                        opacity={vol}
+                        opacity={vol ? 0 : 1}
                     />
                 </div>
                 </div>
