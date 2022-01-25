@@ -58,7 +58,7 @@ table {
     border-spacing: 0;
 }
 a {
-  /* all: unset; */
+  all: unset;
   /* position: inherit; */
   /* border: 2px solid red; */
 }
@@ -152,15 +152,16 @@ a:hover {
     /* max-width: 50%; */
     height: 100%;
     transform-style: preserve-3d;
-    transition: all 1.5s ease-in;
+    transition: all 2.5s ease-in-out;
     -webkit-perspective: 1000em;
     perspective: 1000em;
-
+    
     /* box-sizing: border-box;
     border: 2px solid red; */
 }
 .homepage-clone-card:hover {
     transform: perspective(1000em) rotateY(180deg);
+    transition: all 1.5s ease-in;
 }
 .homepage-clone-card-front {
     display: flex;
