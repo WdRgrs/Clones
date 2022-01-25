@@ -23,6 +23,7 @@ function NetflixVideo() {
                 volume={vol}
                 width='100vw'
                 height='100vh'
+                onEnded={()=>alert('done')}
             />
 
             {/*blocker div - maybe change to kobra kai info */}
