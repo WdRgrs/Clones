@@ -58,7 +58,9 @@ table {
     border-spacing: 0;
 }
 a {
-  all: unset;
+  /* all: unset; */
+  /* position: inherit; */
+  /* border: 2px solid red; */
 }
 a:hover {
     cursor: pointer;
@@ -145,7 +147,7 @@ a:hover {
     align-items: center;
     margin: auto;
 
-    position: absolute;
+    position: relative;
     min-width: 400px;
     /* max-width: 50%; */
     height: 100%;

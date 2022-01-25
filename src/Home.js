@@ -17,13 +17,12 @@ function Home() {
             <IconContext.Provider value={{size: '1.5em'}}>
                 <div className='homepage-clones-container'>
                     <div className='homepage-clone-holder'>
-                        <div className='homepage-clone-card'>
-                            <div className='homepage-clone-card-front'>
-                                <img src={netflixLogo} id="netflix-logo" alt=''></img>
-                            </div>
-
+                        <Link to='netflix'>
+                            <div className='homepage-clone-card'>
+                                <div className='homepage-clone-card-front'>
+                                    <img src={netflixLogo} id="netflix-logo" alt=''></img>
+                                </div>
                                 <div className='homepage-clone-card-back'>
-                                    <Link to='netflix'>
                                         <div id='homepage-back-info'>
                                             <SiNetflix 
                                                 color='red'
@@ -32,40 +31,40 @@ function Home() {
                                             <h2>Netflix</h2>
                                             <p>A clone of netflix that drops the user in at the account selection screen - click 'You' to navigate farther into the page.</p>
                                         </div>
-                                    </Link>
                                 </div>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
 
                     <div className='homepage-clone-holder'>
-                        <div className='homepage-clone-card'>
-                            <div className='homepage-clone-card-front'>
-                                <img src={googleLogo} id="google-logo" alt=''></img>
+                        <Link to='google'>
+                            <div className='homepage-clone-card'>
+                                <div className='homepage-clone-card-front'>
+                                    <img src={googleLogo} id="google-logo" alt=''></img>
+                                </div>
+                                <div className='homepage-clone-card-back'>
+                                        <div id='homepage-back-info'>
+                                            <FcGoogle 
+                                                size='7em'
+                                            />
+                                            <h2>Google</h2>
+                                        </div>
+                                </div>
                             </div>
-
-                            <div className='homepage-clone-card-back'>
-                                <Link to='google'>
-                                    <div id='homepage-back-info'>
-                                        <FcGoogle 
-                                            size='7em'
-                                        />
-                                        <h2>Google</h2>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
+                        </Link>
                     </div>
 
                     <div className='homepage-clone-holder'>
-                        <div className='homepage-clone-card'>
-                            <div className='homepage-clone-card-front'>
-                                <SiNetflix />
+                        <Link to='midwestern'>
+                            <div className='homepage-clone-card'>
+                                <div className='homepage-clone-card-front'>
+                                    <SiNetflix />
+                                </div>
+                                <div className='homepage-clone-card-back'>
+                                    Midwestern
+                                </div>
                             </div>
-
-                            <div className='homepage-clone-card-back'>
-                                <Link to='midwestern'>Midwestern</Link>
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </IconContext.Provider>
