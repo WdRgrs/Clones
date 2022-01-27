@@ -3,6 +3,7 @@ import './netflix.css'
 // import NetflixBox from './NetflixBox'
 import NetflixNav from './NetflixNav'
 import NetflixVideo from './NetflixVideo'
+import NetflixVideoCard from './NetflixVideoCard'
 import OnNetflixCat from './OnNetflixCat'
 
 function NetflixHomePg() {
@@ -13,6 +14,9 @@ function NetflixHomePg() {
         <main id='netflix-main-container'>
             <NetflixNav />
             <NetflixVideo />
+
+            {/* set to false, onClick(true) */}
+            <NetflixVideoCard />
 {/* Map over categories array - reuse component */}
             {netflixCategories.map(idx => 
                 <OnNetflixCat 

@@ -4,6 +4,10 @@ import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function NetflixVideoCard() {
+    // onclick set condition // update props // modal element
+    if (true){
+        return null;
+    }
   return (
     <div>
         <div id='netflix-main-video-title'>
