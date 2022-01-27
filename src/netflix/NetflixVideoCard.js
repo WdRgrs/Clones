@@ -1,7 +1,5 @@
 import React from 'react';
 import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
-import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
-
 
 function NetflixVideoCard() {
     // onclick set condition // update props // modal element

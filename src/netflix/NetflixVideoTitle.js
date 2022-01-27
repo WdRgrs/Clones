@@ -2,9 +2,7 @@ import React from 'react';
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { IoPlay } from "react-icons/io5";
 
-// IoPlay
 import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
-import NetflixVideo from './NetflixVideo';
 
 function NetflixVideoTitle() {
     return (
@@ -13,6 +11,7 @@ function NetflixVideoTitle() {
             <div id='netflix-main-video-title'>
                 <div>N SERIES</div>
                 <h2 id='deadstock-main-title'><span>C</span>obra <span>K</span>ai</h2>
+                {/* UPDATE LOGIC TO HAVE SHOW INFORMATION ON FINISHED PLAYING */}
                 {/* <p id='netflix-main-title-about'>
                     Decades after the tournament that changed their lives, the rivalry between Johnny and Daniel reignites in this sequel to the "Karate Kid" films.
                 </p> */}

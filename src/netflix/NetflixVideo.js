@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player'
 import { BiVolumeFull, BiVolumeMute } from "react-icons/bi";
-import NetflixVideoCard from './NetflixVideoCard';
 import NetflixVideoTitle from './NetflixVideoTitle';
 
 
