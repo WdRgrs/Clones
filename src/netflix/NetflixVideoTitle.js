@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { IoPlay } from "react-icons/io5";
 
-import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
+// import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
 
 function NetflixVideoTitle() {
     return (

@@ -15,7 +15,7 @@ function NetflixHomePg() {
             <NetflixNav />
             <NetflixVideo />
 
-            {/* set to false, onClick(true) */}
+{/* set to false, onClick(true) */}
             <NetflixVideoCard />
 {/* Map over categories array - reuse component */}
             {netflixCategories.map(idx => 
