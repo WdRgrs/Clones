@@ -64,14 +64,16 @@
 }
 .netflix-landing-container{
     display: flex;
+    position: relative;
+    top: -2.5vw;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    /* margin: 10vh auto; */
+    margin: 2.8vw auto;
     width: 46%;
-    height: 50%;
+    height: 43%;
     /* padding: 20px 0 0 0; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .netflix-landing-header {
     z-index: 15;
