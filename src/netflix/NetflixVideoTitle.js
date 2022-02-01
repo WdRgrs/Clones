@@ -23,12 +23,13 @@ function NetflixVideoTitle() {
                 </p> */}
                 <section className='netflix-main-title-section' id='netflix-main-title-buttons-container'>
                     <button className='main-title-button' id='main-title-play'>
-                    <IoPlay size='2.5rem' />
-                    Play
+                    <IoPlay size='2em' />
+                    <span>Play</span>
                     </button>
                     <button className='main-title-button' id='main-title-about'>
-                    <AiOutlineInfoCircle size='2.3rem' /> 
-                    More Info</button>
+                    <AiOutlineInfoCircle size='2.35rem' /> 
+                    <span>More Info</span>
+                    </button>
                 </section>
             </div>        
         </div>
