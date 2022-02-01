@@ -25,14 +25,14 @@ function NetflixVideo() {
                     controls={false}
                     volume={vol}
                     width='100vw'
-                    height='100vh'
+                    height='115vh'
                     onEnded={()=>handleDone()}
                 />
             </div>
             <img src={bkImg} style={{opacity: backgroundImage}} id="background-image" alt=''></img>
 
             <NetflixVideoTitle />
-            
+
             <NetflixMuteBtn 
                 vol={vol}
                 setVol={setVol}
