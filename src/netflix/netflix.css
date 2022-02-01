@@ -168,14 +168,24 @@
     /* border: 2px solid red; */
 }
 
-#video-background {
+.video-background {
     position: absolute;
-
     top: 0;
     left: 0;
+
     background-color: #151415;    
     z-index: -10;
+    /* border: 2px solid red; */
 }
+#background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9;
+}
+
 #blocker{
     width: 100vw;
     height: 43.1vw;

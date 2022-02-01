@@ -10,10 +10,7 @@ function NetflixVideoTitle() {
         <div>
             <div id='netflix-main-video-title'>
                 <div id='netflix-title-series'>
-                    <SiNetflix 
-                        color='red'
-                        size='1.2vw'
-                    />
+                    <SiNetflix color='red' size='1.2vw' />
                     <span>{'SERIES'}</span>
                 </div>
                 <h2 id='deadstock-main-title'><span>C</span>obra <span>K</span>ai</h2>
@@ -23,12 +20,12 @@ function NetflixVideoTitle() {
                 </p> */}
                 <section className='netflix-main-title-section' id='netflix-main-title-buttons-container'>
                     <button className='main-title-button' id='main-title-play'>
-                    <IoPlay size='2em' />
-                    <span>Play</span>
+                        <IoPlay size='2em' />
+                        <span>Play</span>
                     </button>
                     <button className='main-title-button' id='main-title-about'>
-                    <AiOutlineInfoCircle size='2.35rem' /> 
-                    <span>More Info</span>
+                        <AiOutlineInfoCircle size='2.35rem' /> 
+                        <span>More Info</span>
                     </button>
                 </section>
             </div>        
