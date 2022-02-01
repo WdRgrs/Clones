@@ -1,14 +1,14 @@
 import React from 'react';
 import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
 
-function NetflixVideoCard() {
+function NetflixVideoCard({showInfo}) {
     // onclick set condition // update props // modal element
-    if (true){
+    if (!showInfo){
         return null;
     }
     return (
-        <div>
-            <div id='netflix-main-video-title'>
+        <div id='netflix-card-background'>
+            <div id='netflix-card'>
                 <h2 id='deadstock-title'><span>C</span>obra <span>K</span>ai</h2>
                 <section className='netflix-title-section' id='netflix-title-info'>
                     <div>New</div>

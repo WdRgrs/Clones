@@ -65,13 +65,13 @@
 .netflix-landing-container{
     display: flex;
     position: relative;
-    top: -2.5vw;
+    top: -2.6vw;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 2.8vw auto;
+    margin: calc(1vh + 2vw) auto;
     width: 46%;
-    height: 43%;
+    height: 22vw;
     /* padding: 20px 0 0 0; */
     /* border: 2px solid red; */
 }
@@ -268,7 +268,10 @@
     color: #ffffff;
     width: 11.3vw;
 }
-
+.main-title-button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
 
 
 
@@ -279,10 +282,31 @@
 
 
 /* NETFLIX MAIN TITLE CARD */
+#netflix-card-background{
+    position: absolute;
+    top: 0;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 
+    width: 100vw;
+    /* height: 100vh; */
+    overflow: auto;
 
-
-
+    box-sizing: border-box;
+    border: 2px solid red;
+    z-index: 123123;
+}
+#netflix-card{
+    /* display: flex; */
+    /* align-items: center; */
+    overflow: auto;
+    margin: auto;
+    width: 900px;
+    height: 900vh;
+    background-color: #181818;
+    /* border: 2px solid red; */
+}
 
 #netflix-title-info {
     gap: 1vw;

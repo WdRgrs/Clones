@@ -5,7 +5,7 @@ import NetflixMuteBtn from './NetflixMuteBtn';
 import NetflixVideoTitle from './NetflixVideoTitle';
 
 
-function NetflixVideo() {
+function NetflixVideo({showInfo, setShowInfo}) {
     const [vol, setVol] = useState(0);
     const [playingState, setPlayingState] = useState(true)
     const [backgroundImage, setBackgroundImage] = useState(0);
@@ -31,7 +31,10 @@ function NetflixVideo() {
             </div>
             <img src={bkImg} style={{opacity: backgroundImage}} id="background-image" alt=''></img>
 
-            <NetflixVideoTitle />
+            <NetflixVideoTitle 
+                showInfo={showInfo}
+                setShowInfo={setShowInfo}
+            />
 
             <NetflixMuteBtn 
                 vol={vol}
