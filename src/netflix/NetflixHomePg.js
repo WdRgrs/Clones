@@ -21,10 +21,9 @@ function NetflixHomePg() {
                 setShowInfo={setShowInfo}
             />
 
-{/* set to false, onClick(true) */}
-
             <NetflixVideoCard 
                 showInfo={showInfo}
+                setShowInfo={setShowInfo}
             />
     
 {/* Map over categories array - reuse component */}

@@ -16,7 +16,7 @@ function NetflixMuteBtn({vol, setVol, playingState, setPlayingState, setVideoUrl
     }
     
     const refreshDiv = (
-        <div id='netflix-volume-button' onClick={()=> handleRefresh()}>
+        <div id='netflix-volume-button' onClick={()=> handleRefresh()} style={{transform: 'rotate(45deg)'}}>
             <MdRefresh 
                 color='white'
                 size='2em'

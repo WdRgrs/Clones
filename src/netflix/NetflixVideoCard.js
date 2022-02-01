@@ -1,14 +1,24 @@
 import React from 'react';
 import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
 
-function NetflixVideoCard({showInfo}) {
+function NetflixVideoCard({showInfo, setShowInfo}) {
     // onclick set condition // update props // modal element
     if (!showInfo){
         return null;
     }
+
+    function handleClose() {
+        setShowInfo(false)
+    }
     return (
         <div id='netflix-card-background'>
             <div id='netflix-card'>
+                <div id='netflix-card-close-btn'
+                    onClick={()=>handleClose()}
+                >
+                    {'+'}
+                </div>
+
                 <h2 id='deadstock-title'><span>C</span>obra <span>K</span>ai</h2>
                 <section className='netflix-title-section' id='netflix-title-info'>
                     <div>New</div>
@@ -18,7 +28,6 @@ function NetflixVideoCard({showInfo}) {
                     {/* <div id='netflix-audio-description'> */}
                         <span className="iconify" data-icon="fa:audio-description" data-width="40"></span>
                     {/* </div> */}
-
                 </section>
                 <p id='netflix-title-about'>
                     Decades after the tournament that changed their lives, the rivalry between Johnny and Daniel reignites in this sequel to the "Karate Kid" films.

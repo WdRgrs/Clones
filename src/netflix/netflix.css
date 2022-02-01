@@ -214,7 +214,7 @@
     font-size: 5vw;
     text-transform: uppercase;
     color: white;
-    margin: 0 0 4vw 0;
+    margin: 1vw 0 0 0;
 }
 #deadstock-main-title span {
     font-size: 1.4em;
@@ -233,6 +233,12 @@
     letter-spacing: .5em;
     transform: scale(1, .9)
 }
+#netflix-main-title-about{
+    width: 70%;
+    border: 2px solid red;
+    /* margin: 2vw 0; */
+}
+
 
 #netflix-main-title-buttons-container{
     display: flex;
@@ -242,8 +248,9 @@
 .main-title-button{
     display: flex;
     justify-content: flex-start;
-    /* gap: 1vw; */
     align-items: center;
+    /* gap: 1vw; */
+    margin: 2vw 0 0 0;
     padding: 0 1.25vw;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 1.2vw;
@@ -288,14 +295,15 @@
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-
+    padding: 3vh;
     width: 100vw;
     height: 100vh;
     /* height: 100vh; */
     /* overflow: auto; */
+    background-color: #181818b9;
     
     box-sizing: border-box;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     z-index: 123123;
 }
 #netflix-card{
@@ -303,11 +311,37 @@
     /* align-items: center; */
     overflow: auto;
     margin: auto;
-    width: 900px;
+    width: 890px;
     height: 100vh;
     background-color: #181818;
+    border-radius: .3vw;
     /* border: 2px solid red; */
 }
+#netflix-card-close-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: right;
+    top: 1.2em;
+    right: 1em;
+    width: 2.3em;
+    height: 2.3em;
+    color: white;
+    border-radius: 50%;
+    background-color: #32323238;
+    transform: rotate(45deg);
+}
+#netflix-card-close-btn:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 #netflix-title-info {
     gap: 1vw;

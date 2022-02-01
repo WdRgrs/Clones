@@ -32,6 +32,7 @@ function NetflixVideo({showInfo, setShowInfo}) {
             <img src={bkImg} style={{opacity: backgroundImage}} id="background-image" alt=''></img>
 
             <NetflixVideoTitle 
+                playingState={playingState}
                 showInfo={showInfo}
                 setShowInfo={setShowInfo}
             />
