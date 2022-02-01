@@ -202,9 +202,10 @@
 }
 #deadstock-main-title {
     font-family: 'Dead-Stock';
-    font-size: 6em;
+    font-size: 5vw;
     text-transform: uppercase;
     color: white;
+    margin: 0 0 4vw 0;
 }
 #deadstock-main-title span {
     font-size: 1.4em;
@@ -217,11 +218,15 @@
 #netflix-title-series{
     display: flex;
     align-items: center;
-    /* font-size: .75vw; */
-    font-size: calc(.7vh + .4vw);
+    gap: 5px
+}
+#netflix-title-series span{
+    color: #e5e5e5;
+    font-size: calc(.4vh + .5vw);
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: .5em;
+    transform: scale(1, .9)
 }
 .main-title-button{
     display: flex;

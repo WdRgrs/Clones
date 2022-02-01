@@ -7,15 +7,14 @@ import { IoPlay } from "react-icons/io5";
 
 function NetflixVideoTitle() {
     return (
-
         <div>
             <div id='netflix-main-video-title'>
                 <div id='netflix-title-series'>
                     <SiNetflix 
                         color='red'
-                        size='1.5vw'
+                        size='1.2vw'
                     />
-                    {'SERIES'}
+                    <span>{'SERIES'}</span>
                 </div>
                 <h2 id='deadstock-main-title'><span>C</span>obra <span>K</span>ai</h2>
                 {/* UPDATE LOGIC TO HAVE SHOW INFORMATION ON FINISHED PLAYING */}
