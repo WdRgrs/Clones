@@ -10,48 +10,51 @@ function NetflixMuteBtn({vol, setVol, playingState, setPlayingState, setVideoUrl
         setPlayingState(true);
         setBackgroundImage(0);
     }
-
+    
     function handleMute() {
         vol ? setVol(0) : setVol(1)
     }
+    
+    const refreshDiv = (
+        <div id='netflix-volume-button' onClick={()=> handleRefresh()}>
+            <MdRefresh 
+                color='white'
+                size='2em'
+            />
+        </div>
+    )
+
+    const muteDiv = (
+        <div id='netflix-volume-button' onClick={()=> handleMute()}>
+            <VscMute 
+                color='White'
+                size='1.5rem'
+            />
+        </div>
+    )
+
+    const unMuteDiv = (
+        <div id='netflix-volume-button' onClick={()=> handleMute()}>
+            <VscUnmute 
+                color='White'
+                size='1.5rem'
+            />
+        </div>
+    )
+
     return (
         <div>
             <div id='blocker'>
                 <div >
                     {vol ? 
                         <div id='netflix-volume-containter'>
-                                {!playingState ? 
-                                    <div id='netflix-volume-button' onClick={()=> handleRefresh()}>
-                                        <MdRefresh 
-                                            color='white'
-                                            size='2em'
-                                        />
-                                    </div>
-                                    : <div id='netflix-volume-button' onClick={()=> handleMute()}>
-                                        <VscUnmute 
-                                            color='White'
-                                            size='1.5rem'
-                                        />
-                                    </div>}
-                                
+                            {playingState ? unMuteDiv : refreshDiv}      
                             <div id='netflix-button-rating'>TV-14</div>
                         </div>
                         : <div id='netflix-volume-containter'>
-                            {!playingState ? 
-                                <div id='netflix-volume-button' onClick={()=> handleRefresh()}>
-                                    <MdRefresh 
-                                        color='white'
-                                        size='2em'
-                                    />
-                                </div> 
-                                : <div id='netflix-volume-button' onClick={()=> handleMute()}>
-                                    <VscMute 
-                                        color='White'
-                                        size='1.5rem'
-                                    />
-                                </div>}
+                            {playingState ? muteDiv : refreshDiv}
                             <div id='netflix-button-rating'>TV-14</div>
-                        </div> 
+                        </div>
                     }
                 </div>
 
