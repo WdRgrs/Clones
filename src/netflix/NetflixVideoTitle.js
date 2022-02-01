@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SiNetflix } from "react-icons/si";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { IoPlay } from "react-icons/io5";

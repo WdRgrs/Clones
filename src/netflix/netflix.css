@@ -362,10 +362,12 @@
     align-items: center;
     position: relative;
     float: right;
-    top: 1.2em;
-    right: 1em;
-    width: 2.3em;
-    height: 2.3em;
+    top: .5em;
+    right: .45em;
+    width: 1em;
+    height: 1em;
+    font-size: 2.35em;
+    font-weight: 100;
     color: white;
     border-radius: 50%;
     background-color: #32323238;
