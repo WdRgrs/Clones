@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
+
 import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
 
 function NetflixVideoCard({showInfo, setShowInfo}) {
@@ -13,6 +15,25 @@ function NetflixVideoCard({showInfo, setShowInfo}) {
     return (
         <div id='netflix-card-background'>
             <div id='netflix-card'>
+    
+
+                <div className='video-background-card'>
+                    <ReactPlayer
+                        id='react-player'
+                        url={'https://www.youtube.com/watch?v=16jTAS9Phoc'}
+                        playing={true}
+                        controls={false}
+                        volume={0}
+                        width='1000px'
+                        height='565px'
+                        config={{
+                            youtube: {
+                            playerVars: { showinfo: 0 }
+                            }
+                        }}
+                        // onEnded={()=>handleDone()}
+                    />
+                </div>
                 <div id='netflix-card-close-btn'
                     onClick={()=>handleClose()}
                 >

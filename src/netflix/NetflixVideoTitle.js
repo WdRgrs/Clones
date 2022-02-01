@@ -6,10 +6,11 @@ import { IoPlay } from "react-icons/io5";
 
 // import { BsHandThumbsUp, BsHandThumbsDown } from "react-icons/bs";
 
-function NetflixVideoTitle({showInfo, setShowInfo, playingState}) {
+function NetflixVideoTitle({showInfo, setShowInfo, playingState, setPlayingState}) {
 
     function handleInfo() {
         setShowInfo(true)
+        setPlayingState(false)
     }
 
     let titleSmall = (

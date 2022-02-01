@@ -33,6 +33,7 @@ function NetflixVideo({showInfo, setShowInfo}) {
 
             <NetflixVideoTitle 
                 playingState={playingState}
+                setPlayingState={setPlayingState}
                 showInfo={showInfo}
                 setShowInfo={setShowInfo}
             />
