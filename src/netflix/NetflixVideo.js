@@ -2,16 +2,18 @@ import React, {useState} from 'react';
 import ReactPlayer from 'react-player'
 import bkImg from './images/background_CK.jpg'
 import NetflixMuteBtn from './NetflixMuteBtn';
+import NetflixVideoTitle from './NetflixVideoTitle';
 
 
 function NetflixVideo() {
     const [vol, setVol] = useState(0);
+    const [playingState, setPlayingState] = useState(true)
     const [backgroundImage, setBackgroundImage] = useState(0);
-    
-    let videoUrl = 'https://vimeo.com/655516741'
+    const [videoUrl, setVideoUrl] = useState('https://vimeo.com/655516741')
 
     function handleDone() {
         setBackgroundImage(1)
+        setPlayingState(false)
     }
 
     return (
@@ -19,7 +21,7 @@ function NetflixVideo() {
             <div className='video-background'>
                 <ReactPlayer
                     url={videoUrl}
-                    playing={true}
+                    playing={playingState}
                     controls={false}
                     volume={vol}
                     width='100vw'
@@ -28,13 +30,16 @@ function NetflixVideo() {
                 />
             </div>
             <img src={bkImg} style={{opacity: backgroundImage}} id="background-image" alt=''></img>
-            {/* <div className='video-background' style={{opacity: backgroundImage}}>
-            </div> */}
 
-            {/*blocker div - maybe change to kobra kai info */}
+            <NetflixVideoTitle />
+            
             <NetflixMuteBtn 
                 vol={vol}
                 setVol={setVol}
+                playingState={playingState}
+                setPlayingState={setPlayingState}
+                setVideoUrl={setVideoUrl}
+                setBackgroundImage={setBackgroundImage}
             />
         </div>
     )

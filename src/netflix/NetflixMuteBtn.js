@@ -1,8 +1,15 @@
-import React, {useState} from 'react';
-import { BiVolumeFull, BiVolumeMute } from "react-icons/bi";
-import NetflixVideoTitle from './NetflixVideoTitle';
+import React from 'react';
+import { VscMute, VscUnmute } from "react-icons/vsc";
+import { MdRefresh } from "react-icons/md";
 
-function NetflixMuteBtn({vol, setVol}) {
+
+
+function NetflixMuteBtn({vol, setVol, playingState, setPlayingState, setVideoUrl, setBackgroundImage}) {
+    function handleRefresh() {
+        setVideoUrl('https://vimeo.com/655516741');
+        setPlayingState(true);
+        setBackgroundImage(0);
+    }
 
     function handleMute() {
         vol ? setVol(0) : setVol(1)
@@ -10,23 +17,44 @@ function NetflixMuteBtn({vol, setVol}) {
     return (
         <div>
             <div id='blocker'>
-                {/* <NetflixVideoCard /> */}
-                <NetflixVideoTitle />
-                <div onClick={()=> handleMute()}>
-                <div id='netflix-volume-button'>
-                    <BiVolumeFull 
-                        color='White'
-                        size='2rem'
-                    />
+                <div >
+                    {vol ? 
+                        <div id='netflix-volume-containter'>
+                                {!playingState ? 
+                                    <div id='netflix-volume-button' onClick={()=> handleRefresh()}>
+                                        <MdRefresh 
+                                            color='white'
+                                            size='2em'
+                                        />
+                                    </div>
+                                    : <div id='netflix-volume-button' onClick={()=> handleMute()}>
+                                        <VscUnmute 
+                                            color='White'
+                                            size='1.5rem'
+                                        />
+                                    </div>}
+                                
+                            <div id='netflix-button-rating'>TV-14</div>
+                        </div>
+                        : <div id='netflix-volume-containter'>
+                            {!playingState ? 
+                                <div id='netflix-volume-button' onClick={()=> handleRefresh()}>
+                                    <MdRefresh 
+                                        color='white'
+                                        size='2em'
+                                    />
+                                </div> 
+                                : <div id='netflix-volume-button' onClick={()=> handleMute()}>
+                                    <VscMute 
+                                        color='White'
+                                        size='1.5rem'
+                                    />
+                                </div>}
+                            <div id='netflix-button-rating'>TV-14</div>
+                        </div> 
+                    }
                 </div>
-                <div id='netflix-volume-button'>
-                    <BiVolumeMute 
-                        color='White'
-                        size='2rem'
-                        opacity={vol ? 0 : 1}
-                    />
-                </div>
-                </div>
+
             </div>
         </div>
     )
