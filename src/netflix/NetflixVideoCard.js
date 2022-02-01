@@ -59,6 +59,20 @@ function NetflixVideoCard({showInfo}) {
                         <p>Heartfelt, Exciting</p>
                     </div>
                 </section>
+                <section className='netflix-title-section' id='netflix-title-details'>
+                    <div>
+                        <h3>Starring:</h3>
+                        <p>Ralph Macchio, William Zabka</p>
+                    </div>
+                    <div>
+                        <h3>Genres:</h3>
+                        <p>TV Dramas</p>
+                    </div>
+                    <div>
+                        <h3>This show is:</h3>
+                        <p>Heartfelt, Exciting</p>
+                    </div>
+                </section>
             </div>
         </div>
     )
