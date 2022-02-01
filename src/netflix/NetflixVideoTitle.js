@@ -1,4 +1,5 @@
 import React from 'react';
+import { SiNetflix } from "react-icons/si";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { IoPlay } from "react-icons/io5";
 
@@ -9,7 +10,13 @@ function NetflixVideoTitle() {
 
         <div>
             <div id='netflix-main-video-title'>
-                <div>N SERIES</div>
+                <div id='netflix-title-series'>
+                    <SiNetflix 
+                        color='red'
+                        size='1.5vw'
+                    />
+                    {'SERIES'}
+                </div>
                 <h2 id='deadstock-main-title'><span>C</span>obra <span>K</span>ai</h2>
                 {/* UPDATE LOGIC TO HAVE SHOW INFORMATION ON FINISHED PLAYING */}
                 {/* <p id='netflix-main-title-about'>
