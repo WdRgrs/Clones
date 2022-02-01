@@ -161,37 +161,34 @@
 #netflix-main-container{
     width: 100vw;
     height: 100vh;
-    /* background-color: #151415; */
     background: transparent;
     z-index: 1;
-    /* color: white; */
-    /* border: 2px solid red; */
+    user-select: none;
 }
 
 .video-background {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
-
     background-color: #151415;    
     z-index: -10;
-    /* border: 2px solid red; */
 }
 #background-image{
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
     z-index: -9;
 }
 
 #blocker{
     width: 100vw;
     height: 43.1vw;
-    /* border: 2px solid red; */
 }
 
 
