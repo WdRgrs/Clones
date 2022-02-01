@@ -202,7 +202,7 @@
     justify-content: flex-end;
     
     position: absolute;
-    width: 38vw;
+    width: 48vw;
     height: 15vw;
     top: 20.95vw;
     left: 3.05vw;
@@ -214,7 +214,7 @@
     font-size: 5vw;
     text-transform: uppercase;
     color: white;
-    margin: 1vw 0 0 0;
+    margin: 1.7vw 0 0 0;
 }
 #deadstock-main-title span {
     font-size: 1.4em;
@@ -226,16 +226,55 @@
     gap: 5px
 }
 #netflix-title-series span{
-    color: #e5e5e5;
-    font-size: calc(.4vh + .5vw);
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #afafaf;
+    font-size: calc(.5vh + .5vw);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 0 1px #afafaf;
     font-weight: 700;
-    letter-spacing: .5em;
-    transform: scale(1, .9)
+    letter-spacing: .4em;
+    /* transform: scale(1, .9); */
 }
+
+
+#netflix-title-series-large{
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+#netflix-title-series-large span{
+    color: #afafaf;
+    font-size: calc(.4vh + 1vw);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 0 2px #afafaf;
+
+    font-weight: 700;
+    letter-spacing: .4em;
+    /* transform: scale(1, .9) */
+}
+#deadstock-main-title-large {
+    font-family: 'Dead-Stock';
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: white;
+    margin: 3.4vw 0 0 0;
+}
+#deadstock-main-title-large span {
+    font-size: 1.4em;
+}
+
+
 #netflix-main-title-about{
+    line-height: 1.86vw;
+    font-size: 1.4vw;
     width: 70%;
-    border: 2px solid red;
+
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #1a1a1a;
+    transform: scale(1, .95)
+
+    /* border: 2px solid red; */
     /* margin: 2vw 0; */
 }
 
@@ -250,7 +289,7 @@
     justify-content: flex-start;
     align-items: center;
     /* gap: 1vw; */
-    margin: 2vw 0 0 0;
+    margin: 1.2vw 0 0 0;
     padding: 0 1.25vw;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 1.2vw;
